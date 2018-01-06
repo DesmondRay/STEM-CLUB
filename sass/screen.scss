@@ -1,0 +1,192 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url("../fonts/stylesheet.css");
+
+$white: #ffffff;
+$highlight: #00cd9b;
+$light_gray: #ecf0f1;
+$dark_gray: #7f8c8d;
+$black: #0C090A;
+
+body {
+  font-family: 'Proxima Nova Rg';
+}
+
+canvas {
+  display:block;
+  vertical-align:top;
+  position: absolute !important;
+  top: 0px;
+  z-index: 0;
+}
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.button {
+  border: 2px solid $white;
+  border-radius: 1rem ;
+  background: transparent;
+  padding: 1.2rem 3rem;
+  font-weight: 600;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#particles-js {
+  background: url("../images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  header {
+    padding: 2rem 0;
+  }
+  .wrapper {
+
+  }
+  #logo {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.35rem;
+    float: left;
+    margin: 0;
+    span {
+      font-weight: 300;
+      color: $highlight;
+    }
+  }
+
+  nav {
+    float: right;
+    a {
+      font-size: 1.1rem;
+      color: $white;
+      font-weight: 700;
+      text-decoration: none;
+      margin-left: 2rem;
+      position: relative;
+      z-index: 2 !important;
+    }
+    a:hover {
+      transition: .3s;
+      color: $highlight;
+    }
+  }
+
+  .content {
+    padding: 30vh 0 6rem 0;
+    .title, .subtitle {
+      color: $white;
+      text-align: center;
+      line-height: 4rem;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 4.5rem;
+    }
+    .subtitle {
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+    .button_wrapper {
+      text-align: center;
+      margin: 3rem 0;
+      .button_highlight {
+        position: relative;
+        z-index: 2 !important;
+        font-size: 1.3rem;
+      }
+      a:hover {
+        transition: .3s;
+        color: $highlight;
+        border-color: $highlight;
+      }
+    }
+  }
+}
+
+#about {
+  background: $highlight;
+  .content {
+    padding: 10vh 0 20vh 0;
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+    img{
+      max-width: 300px;
+      margin-bottom: 5vh;
+    }
+
+    .title {
+      color: $white;
+      margin-bottom: 40px;
+    }
+    p {
+      color: $white;
+      line-height: 1.8rem;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+#projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/video.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .content {
+    text-align: center;
+    padding: 30vh 0 30vh 0;
+    max-width: 720px;
+    margin: 0 auto;
+    .button_wrapper {
+      text-align: center;
+      margin: 3rem 0;
+      .button_highlight {
+        position: relative;
+        z-index: 2 !important;
+        font-size: 1.3rem;
+      }
+      a:hover {
+        transition: .3s;
+        color: $highlight;
+        border-color: $highlight;
+      }
+    }
+  }
+  .title {
+    color: $white;
+    margin-bottom: 40px;
+  }
+  p {
+    color: $white;
+    line-height: 1.8rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}
+
+footer {
+  background: #000000;
+  p {
+    text-align: center;
+    color: $white;
+    font-size: 1em;
+    padding: 2rem 0 2rem 0;
+  }
+}
